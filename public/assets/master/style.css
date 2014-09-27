@@ -1,0 +1,109 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section-root {
+	width:100%;
+	max-width:1920px;
+	margin:0px auto;
+}
+
+.main-nav {
+	display: none;
+}
+
+.intro-section {
+	position: relative;
+	background-image: url('../intro/intro-bg.jpg');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+}
+
+.intro-section .intro-content {
+	position: relative;
+	max-width:1700px;
+	max-height: 1095px;
+	margin:0px auto;
+}
+
+.intro-section .logo {
+	margin:15px auto 0px auto;
+	background-image: url('../intro/logo.png');
+	background-repeat: no-repeat;
+	color:rgba(0,0,0,0);
+	width:252px;
+	height:68px;
+}
+
+.intro-section .center-wrap {
+	padding:0px 15px;
+	max-width: 320px;
+	margin:0px auto;
+}
+
+.intro-section .title {
+	color:#fff;
+	font-size:27px;
+	font-weight: 700;
+	margin:30px 0px;
+	text-align: center;
+}
+
+.intro-section .center-wrap p {
+	color:#fff;
+	text-align: center;
+	margin-bottom:0px;
+}
+
+.intro-section .intro-nav {
+	background-image: url('../intro/down-btn.png');
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	padding-top:93px;
+	margin:30px -2px 15px -2px;
+}
+
+.intro-section .intro-nav > div {
+	padding:0px 2px;
+}
+
+.intro-section .intro-nav .section-link {
+	display: block;
+	background-color:#444;
+	color:#fff;
+	text-decoration: none;
+	text-align: center;
+	padding:10px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.intro-section .center-wrap {
+		max-width: 768px;
+	}
+
+	.intro-section .title {
+		font-size: 52px;
+		max-width: none;
+	}
+}
+
+@media (min-width:1200px) {
+	.intro-section .logo {
+		position: absolute;
+		top:50px;
+		left:0px;
+	}
+
+	.intro-section {
+		background-size: 100% auto;
+	}
+
+	.intro-section .title {
+		font-size:50px;
+	}
+
+	.intro-section .title br {
+		content:' ';
+	}
+}
