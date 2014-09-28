@@ -266,6 +266,28 @@ body {
 }
 
 
+/*Portfolio Section
+----------------------------------------------------------------------------------*/
+.portfolio-section .grid-wrapper {
+	margin:0px;
+}
+
+.portfolio-section .grid-wrapper .column {
+	padding:0px;
+}
+
+.portfolio-section .grid-wrapper .column .portfolio-tile {
+	width:50%;
+	height:auto;
+	float:left;
+}
+
+.portfolio-section .grid-wrapper .column .portfolio-tile img {
+	max-width: 100%;
+	height:auto;
+}
+
+
 /*Footer Section
 ----------------------------------------------------------------------------------*/
 .footer-section {
