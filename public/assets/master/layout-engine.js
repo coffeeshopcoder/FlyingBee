@@ -89,6 +89,42 @@ $(document).ready(function() {
 								marginBottom:titleMargin
 							});
 						}
+					} else if(viewport.width<1170) {//laptop
+						var minH=413;
+						if(viewport.height>minH) {//respect min height
+							//Set section height
+							sectionH=0;
+							if(viewport.height>1095) {
+								sectionH=1095;
+							} else {
+								sectionH=viewport.height;
+							}
+							this.jqo.css({height:sectionH});
+
+							//Add margin to section title
+							var centerMargin=(sectionH-minH)/2+30;
+							this.jqo.find('.center-wrap').css({
+								marginTop:centerMargin
+							});
+						}
+					} else {//desktop
+						var minH=424;
+						if(viewport.height>minH) {//respect min height
+							//Set section height
+							sectionH=0;
+							if(viewport.height>1095) {
+								sectionH=1095;
+							} else {
+								sectionH=viewport.height;
+							}
+							this.jqo.css({height:sectionH});
+
+							//Add margin to section title
+							var centerMargin=(sectionH-minH)/2+30;
+							this.jqo.find('.center-wrap').css({
+								marginTop:centerMargin
+							});
+						}
 					}
 				}/*render()*/
 			}

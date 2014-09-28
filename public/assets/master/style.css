@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', sans-serif;
 }
 
+body {
+	background-color: #333;
+}
+
 .section-root {
 	width:100%;
 	max-width:1920px;
@@ -12,6 +16,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: none;
 }
 
+
+/*Intro Section
+----------------------------------------------------------------------------------*/
 .intro-section {
 	position: relative;
 	background-image: url('../intro/intro-bg.jpg');
@@ -88,22 +95,208 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) and (max-width:1169px) {
 	.intro-section .logo {
-		position: absolute;
-		top:50px;
-		left:0px;
+		margin: 15px auto 0px 15px;
 	}
 
-	.intro-section {
-		background-size: 100% auto;
+	.intro-section .center-wrap {
+		max-width: 992px;
 	}
 
 	.intro-section .title {
-		font-size:50px;
+		font-size:48px;	
 	}
 
 	.intro-section .title br {
 		content:' ';
+	}
+	.intro-section .intro-nav {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width:1170px) {
+	.intro-section {
+		background-size: auto auto;
+	}
+
+	.intro-section .logo {
+		margin: 15px auto 0px 15px;
+	}
+
+	.intro-section .center-wrap {
+		max-width: 1170px;
+	}
+
+	.intro-section .title {
+		font-size:58px;	
+	}
+
+	.intro-section .title br {
+		content:' ';
+	}
+	.intro-section .intro-nav {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/*Clients Section
+----------------------------------------------------------------------------------*/
+.clients-section {
+	background-color: #fff;
+	padding:30px 15px;
+}
+
+.clients-section h2 {
+	margin: 0px 0px 30px 0px;
+	font-size: 22px;
+	text-align: center;
+}
+
+.clients-section .artofwar {
+	background-image: url('../clients/bar.png');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	text-align: center;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+
+.clients-section .mantra {
+	text-align: center;
+}
+
+@media (min-width:768px) and (max-width:991px) {/*tablet*/
+	.clients-section h2 {
+		font-size: 32px;
+	}
+}
+
+@media (min-width:992px) and (max-width: 1169px) {/*laptop*/
+	.clients-section h2 {
+		font-size: 41px;
+	}
+
+	.clients-section .mantra {
+		font-size:16px;
+		max-width: 800px;
+		margin: 10px auto;
+	}
+}
+
+@media (min-width:1170px) {/*desktop*/
+	.clients-section h2 {
+		font-size: 53px;
+	}
+
+	.clients-section .artofwar {
+		font-size:16px;
+	}
+
+	.clients-section .mantra {
+		font-size:17px;
+		max-width: 920px;
+		margin: 10px auto;
+	}
+}
+
+
+/*Services Section
+----------------------------------------------------------------------------------*/
+.services-section .grid-wrapper {
+	background-color: #ddd;
+	margin:0px;
+}
+
+.services-section .grid-wrapper .column {
+	padding:0px;
+}
+
+.services-section .grid-wrapper .services-intro {
+	padding: 36px 42px;
+}
+
+.services-section .grid-wrapper .services-intro h2 {
+	margin-top:0px;
+	margin-bottom:25px;
+	font-weight: 700;
+	font-size:32px;
+}
+
+.services-section .grid-wrapper .services-intro p {
+	font-size:16px;
+}
+
+.services-section .grid-wrapper .tile-block {
+	background-color:#fff;
+}
+
+.services-section .grid-wrapper .tile-block .service-tile {
+	width:50%;
+	height:auto;
+	float:left;
+}
+
+.services-section .grid-wrapper .tile-block .service-tile img {
+	max-width: 100%;
+	height:auto;
+}
+
+@media (min-width:1170px) {/*tablet, laptop, desktop*/
+	.services-section .grid-wrapper .services-intro {
+		padding:60px 64px;
+	}
+
+	.services-section .grid-wrapper .services-intro h2 {
+		margin-top:0px;
+		margin-bottom:50px;
+		font-weight: 700;
+		font-size:37px;
+	}
+
+	.services-section .grid-wrapper .services-intro p {
+		font-size:16px;
+	}
+}
+
+
+/*Footer Section
+----------------------------------------------------------------------------------*/
+.footer-section {
+	background-color:#222;
+}
+
+.footer-section .company-info {
+	color:#aaa;
+	margin:30px auto 30px 15px;
+	background-image: url('../footer/logo.png');
+	background-repeat: no-repeat;
+	padding-top:68px;
+	padding-right:15px;
+}
+
+.footer-section .company-info h4 {
+	font-weight: 700;
+}
+
+.footer-section .company-info a {
+	color:#ccc;
+}
+
+@media (min-width:768px) and (max-width:991px) {/*tablet*/
+	.footer-section .company-info .mobile-linebreak {
+		content:' ';
+	}
+}
+
+@media (min-width:1170px) {/*desktop*/
+	.footer-section .company-info {
+		margin:30px auto 30px 30px;
 	}
 }
